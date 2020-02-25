@@ -568,10 +568,6 @@ micro_ncep <- function(
       stop("package 'raster' is needed. Please install it.",
            call. = FALSE)
     }
-    if (!require("RNCEP", quietly = TRUE)) {
-      stop("package 'RNCEP' is needed. Please install it.",
-           call. = FALSE)
-    }
     if (!require("RNetCDF", quietly = TRUE)) {
       stop("package 'RNetCDF' is needed. Please install it.",
            call. = FALSE)
@@ -581,7 +577,6 @@ micro_ncep <- function(
            call. = FALSE)
     }
     require("raster")
-    require("RNCEP")
     require("RNetCDF")
     require("microclima")
     longlat <- loc
